@@ -11,11 +11,6 @@ function test_input($data)
     return $data;
 }
 
-function prefString($numb){
-    $prefarray = array('Man', 'Kvinna', 'Annan', 'Båda', 'Allt');
-    return $prefarray($numb);
-
-}
 
 // Sets up connection to database - use $conn = create_conn(); to open connection and $conn->close();
 function create_conn()

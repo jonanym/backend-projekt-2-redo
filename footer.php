@@ -1,7 +1,6 @@
 </section>
-
-<footer>Made by Anonymus</footer>
-<?php $conn->close(); ?>
 </body>
+<footer>Made by Anonymus</footer>
+
 
 </html>

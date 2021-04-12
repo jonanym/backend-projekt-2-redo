@@ -1,6 +1,6 @@
 <?php include "header.php" ?>
 
-<artucle>
+<article>
     <h1>Uppg 1</h1>
     <?php include "uppg1.php" ?>
 </article>
