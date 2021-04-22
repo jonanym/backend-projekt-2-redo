@@ -31,7 +31,7 @@ if ($result->num_rows > 0){
     Riktigt Namn:
     <input type="text" name="realname" value="<?php print($row['realname']); ?>" required><br>
     Lösenord:
-    <input type="password" name="psw" value="<?php print($row['password']); ?>" required><br>
+    <input type="text" name="psw" value="<?php print($row['password']); ?>" required><br>
     Email:
     <input type="text" name="email" value="<?php print($row['email']); ?>" required><br>
     zipcode:

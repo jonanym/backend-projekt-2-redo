@@ -15,11 +15,13 @@
         <label for="fattiga">Rika sist</label>
         <input type="radio" name="salary2" value="fattiga"><br><br>
 
+        <!--
         <label for="pop">Populära först</label>
         <input type="radio" name="likes" value="pop"><br>
 
         <label for="notpop">Populära sist</label>
         <input type="radio" name="likes" value="notpop"><br><br>
+        -->
             
         <!-- Dropdown för preference -->
         <label for="pref">Välj</label>

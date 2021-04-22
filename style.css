@@ -39,6 +39,7 @@ body {
   margin: 0; /* bort med inbyggd marginal */
   /* Fallback fonter */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #272727;
 }
 article {
   padding: 10px;
@@ -110,4 +111,52 @@ article {
   border-style: solid;
   border-color: #ffccfc;
   border-width: 4px;
+}
+
+footer {
+  background-color: #1abc9c;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+  max-width: 1000px; 
+  margin: auto; 
+  box-sizing: border-box;
+}
+section {
+  color: #3d3d3d; /* fonten samma färg som body bakgrunden */
+  background-color: #fff;
+  max-width: 1000px; /* Tablet-desktop "breakpoint" för läslighet */
+  margin: auto; /* Centrera på desktop */
+  min-height: 100vh; /* Skuffa ner footern trots lite innehåll */
+}
+
+
+@media (max-width: 1200px) {
+  /* Breakpoint vid <1200pxs skärmar (tablet) */
+  section,
+  footer {
+    max-width: 1200px; /* Göm "bakgrunden" på lanscape tablets */
+  }
+  body {
+    font-size: 120%; /* Läslighet på minder skärmar */
+  }
+}
+@media (max-width: 700px) {
+  /* Breakpoint vid <700pxs skärmar (mobil portrait) */
+  nav li {
+    float: none; /* Gör menyn vertikal */
+    width: 200px; /* Minska på elementens bredd (bara för hover effekten) */
+    margin: auto; /* Centrera */
+  }
+  header {
+    display: table; /* Gör loggan full bredd */
+    width: 100%; /* Gör menyn full bredd */
+    text-align: center;
+    font-size: x-large;
+  }
+  nav {
+    margin-top: 10px; /* Lite space mellan meny och logo */
+  }
 }

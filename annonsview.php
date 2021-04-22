@@ -24,10 +24,9 @@ $result = $stmt->get_result();
 
         print("<p>Användarnamn: " .$row['username']);
         print("<p>Riktigt namn: " .$row['realname']);
-        print("<p>Postnummer : " .$row['zip']);
+        print("<p>Postnummer : " .$row['zipcode']);
         print("<p>Profil BIO : " .$row['bio']);
         print("<p>Preferens : " .$row['preference']);
-    
 
     }
 
