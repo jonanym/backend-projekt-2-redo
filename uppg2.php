@@ -3,7 +3,7 @@ Logga in:<br>
 <form action="index.php" method="get">
 Användarnamn:<input type="text" name="usr"><br>
 Lösenord<input type="password" name="lösen"><br>
-<input type="submit" value="Logga in">
+<input type="submit" name ="login" value="Logga in">
 </form>
 
 
@@ -27,22 +27,22 @@ if ($result->num_rows > 0){
     while ($row = $result->fetch_assoc()){
         $password = $row['password'];
         $användare = $row['username'];
-
         $pswhash = password_hash($lösen, PASSWORD_DEFAULT);
-
-        print("<br>" .$password);
-        print("<br>" . $pswhash ."<br>");
     } 
 
- if(isset($_REQUEST['usr']) && isset($_REQUEST['lösen']) && $pswhash == $password){
-    print("Du du har loggats in");
-    $_SESSION['user'] = $username;
+ if(isset($_REQUEST['usr']) && isset($_REQUEST['lösen'])){
+
+    if(password_verify($lösen, $password)){
+       print("Du du har loggats in");
+      $_SESSION['user'] = $username;
+      header('Location: ./index.php');
+    }
+    else{
+      print("fel anv eller lös");
+    }
 
     }
 
-    else{
-      print("fel anv eller lös");
-        }
 }
 
     else {

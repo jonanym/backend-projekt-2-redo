@@ -1,6 +1,6 @@
 /* Sidhuvudet */
 header {
-  background-color: #1abc9c;
+  background-color: rgb(26, 50, 188);
   color: white;
   font-weight: bold;
   display: flex;       /* FÃ¶rÃ¤lder till nav */
@@ -43,4 +43,71 @@ body {
 article {
   padding: 10px;
   margin: 10px;
+}
+
+.ad {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+  display: inline-block;
+  border: 5px solid #1e1ca5;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(179, 156, 243);
+}
+
+.registerlist {
+  margin: auto;
+  list-style-type: none;
+  text-shadow: 1px 1px white;
+}
+.registerlist li {
+  font-size: medium;
+  margin: 10px 5px;
+}
+.registerlist h4 {
+  color: gray;
+  font-size: medium;
+}
+.registerlist input {
+  width: 300px;
+  height: 30px;
+  background-color: rgb(255, 231, 234);
+  border-right: 1px solid;
+}
+.registerlist textarea {
+  width: 350px;
+  height: 120px;
+  background-color: rgb(255, 231, 234);
+  border-right: 1px solid;
+}
+
+
+.reqform {
+  margin: auto;
+}
+.butlabel {
+  size: small;
+  text-align: left;
+}
+.container {
+  width: 800px;
+  background-color: rgb(108, 214, 200);
+}
+.container h2 {
+  padding: 30px 50px;
+}
+.profiledisp h2 {
+  padding: 30px 50px;
+}
+.box {
+  border-style: solid;
+  border-color: #3d3d3d;
+  border-width: 4px;
+}
+.comment {
+  width: 300px;
+  border-style: solid;
+  border-color: #ffccfc;
+  border-width: 4px;
 }

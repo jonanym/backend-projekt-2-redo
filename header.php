@@ -18,10 +18,10 @@
             <a href="../backend-projekt-2-redo/"> Projekt 2</a>
             <nav>
                 <ul>
-                    <li><a href="../backend-projekt-2-redo/"> Projekt 2</a></li>
+                    <li><a href="../backend-projekt-2-redo/"> Hem</a></li>
                     <li><a href="../backend-projekt-2-redo/Raport.php"> Rapport</a></li>
                     <li><a href="../backend-projekt-2-redo/profile.php"> profile</a></li>
-                    <li><a href="../backend-projekt-2-redo/users.php">Annonser</a></li>
+                    <li><a href="../backend-projekt-2-redo/users.php?stage=annons">Annonser</a></li>
 
                 </ul>
             </nav>
